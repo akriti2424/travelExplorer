@@ -9,10 +9,10 @@ const ImageModal = ({ image, onClose }) => {
       <motion.div
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
-        className="bg-white rounded-lg p-4 max-w-lg"
+        className="bg-white rounded-lg p-4 max-w-lg "
         onClick={(e) => e.stopPropagation()}
       >
-        <img src={image.urls.regular} className="rounded mb-4" />
+        <img src={image.urls.regular} className="rounded mb-4 max-h-[70vh]" />
         <p><strong>Photographer:</strong> {image.user.name}</p>
         <p><strong>Likes:</strong> ❤️ {image.likes}</p>
       </motion.div>
