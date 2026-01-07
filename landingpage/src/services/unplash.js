@@ -11,3 +11,5 @@ export const searchImages = (query) =>
   api.get(`/search/photos`, {
     params: { query, per_page: 12 },
   });
+
+  
